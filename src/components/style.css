@@ -1,0 +1,546 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@700;300&family=Montserrat:wght@900&display=swap");
+
+.wrap-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.wrap-2 {
+  position: relative;
+  color: #000;
+  max-width: 100%;
+  width: 100%;
+  overflow-y: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #e3e3e1;
+}
+.wrap-3 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 50px 42px 0;
+}
+
+.wrap-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+img {
+  width: 190px;
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 110px;
+  line-height: 52px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.p1 {
+  max-width: 375px;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 400;
+  margin-bottom: 36px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+.btn-howtoplay {
+  text-decoration: none;
+  background: none;
+  width: 200px;
+  text-align: center;
+  color: #000;
+  border: 1px solid;
+  letter-spacing: 0.01em;
+  position: relative;
+  height: 1.5em;
+  border-radius: 3em;
+  align-content: center;
+  margin: 0 10px 8px;
+  font-size: 20px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  line-height: 28px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  padding: 18px;
+}
+.btn-play {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  width: 200px;
+  border: 1px solid;
+  letter-spacing: 0.01em;
+  position: relative;
+  height: 1.5em;
+  border-radius: 3em;
+  align-content: center;
+  margin: 0 10px 8px;
+  font-size: 20px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  line-height: 28px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  padding: 18px;
+}
+
+.cred {
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  font-style: bold;
+  line-height: 1.25;
+  letter-spacing: 0.005em;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 500;
+}
+.wrap-2-1 {
+  position: relative;
+  color: #000;
+  max-width: 100%;
+  width: 100%;
+  overflow-y: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+}
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@700;300&family=Montserrat:wght@900&display=swap");
+:root {
+  --color-tone-1: #ffffff;
+  --color-tone-2: #818384;
+  --color-tone-3: #565758;
+  --color-tone-4: #3a3a3c;
+  --color-tone-5: #272729;
+  --color-tone-6: #1a1a1b;
+  --color-tone-7: #121213;
+  --color-tone-8: #ffffff;
+  --color-tone-9: #424242;
+  --color-tone-10: #dfdfdf;
+  --color-tone-11: #dfdfdf;
+  --color-tone-12: #dfdfdf;
+  --color-nav-hover: #2f2f31;
+  --color-present: var(--yellow);
+  --color-correct: var(--green);
+  --color-absent: var(--color-tone-2);
+  --tile-text-color: var(--color-tone-8);
+  --key-text-color: var(--color-tone-1);
+  --key-evaluated-text-color: var(--color-tone-7);
+  --key-bg: var(--color-tone-4);
+  --key-bg-present: var(--color-present);
+  --key-bg-correct: var(--color-correct);
+  --key-bg-absent: var(--color-absent);
+  --modal-content-bg: var(--color-tone-7);
+  --keyboard-height: 200px;
+  --game-max-width: 500px;
+  --error-z-index: 500;
+  --toast-z-index: 1000;
+  --modal-z-index: 2000;
+  --page-z-index: 3000;
+  --system-toast-z-index: 4000;
+  --horizontal-warning-z-index: 5000;
+  --outline-focus: var(--outlineBlue);
+  --opacity-50: rgba(0, 0, 0, 0.5);
+}
+:root {
+  --green: #6aaa64;
+  --darkendGreen: #538d4e;
+  --yellow: #c9b458;
+  --darkendYellow: #b59f3b;
+  --spellingBeeYellow: #f7da21;
+  --lightGray: #d3d6da;
+  --gray: #86888a;
+  --gray-2: #dcdcdc;
+  --gray-3: #dfdfdf;
+  --gray-4: #cccccc;
+  --darkGray: #939598;
+  --white: #fff;
+  --black: #212121;
+  --black-2: #121212;
+  --black-3: #363636;
+  --black-4: #cfcfcf;
+  --blue-2: #477aaa;
+  --blue-5: #4f85e5;
+  --orange: #f5793a;
+  --blue: #85c0f9;
+  --outlineBlue: #2671dc;
+  --linkBlue: #477aaa;
+}
+
+body {
+  background-color: #000;
+}
+.wrap-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.dialog {
+  padding-top: 30px;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  width: 3000px;
+  top: 0;
+  left: 0;
+  padding: 0;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--opacity-50);
+  z-index: var(--modal-z-index);
+  color: canvastext;
+  margin: auto;
+  inset-inline-start: 0px;
+  inset-inline-end: 0px;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+}
+.btn {
+  background: none;
+  border: none;
+  padding: 0;
+  width: 40px;
+  height: 24px;
+  color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  text-transform: none;
+  font-size: 33px;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+}
+.btn:hover {
+  color: #818384;
+}
+.diag {
+  display: block;
+  position: relative;
+  margin-right: 855px;
+  border-radius: 8px;
+  border: 1px solid var(--color-tone-6);
+  background-color: var(--modal-content-bg);
+  color: var(--color-tone-1);
+  box-shadow: 0 4px 23px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 708px;
+  overflow-y: auto;
+  animation-duration: 200ms;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: Modal-module_SlideIn__BF5gw;
+  animation-timeline: auto;
+  max-width: 600px;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.diag-1 {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  letter-spacing: 0;
+  line-height: 30px;
+  text-transform: none;
+  text-align: left;
+  margin-bottom: 25px;
+  margin-top: 29px;
+  display: block;
+}
+.diag-2 {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 24px;
+  margin: 0;
+  text-align: left;
+}
+.inst {
+  width: 100%;
+  margin: auto;
+  display: block;
+  margin-top: 40px;
+}
+li {
+  margin-top: 10px;
+}
+.inst-list {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  list-style-type: disc;
+  font-weight: 500;
+  -webkit-margin-before: 1em;
+  margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+  margin-block-end: 1em;
+  -webkit-padding-start: 20px;
+  padding-inline-start: 20px;
+  text-align: left;
+  color: var(--color-tone-1);
+}
+.example {
+  font-family: "Fira Sans Condensed", sans-serif;
+  text-align: left;
+}
+p {
+  font-size: 20px;
+  line-height: 20px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+strong.title {
+  font-size: 27px;
+  font-weight: bold;
+}
+strong {
+  font-weight: bold;
+}
+.example-1,
+.example-2,
+.example-3 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: block;
+}
+.example-tile {
+  display: inline-block;
+  width: 40px;
+  height: 32px;
+  margin-right: 4px;
+  margin-bottom: 8px;
+  padding: 2px;
+}
+.tile-word-correct {
+  background-color: var(--color-correct);
+  font-size: 40px;
+  padding-top: 1px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  font-weight: bold;
+  vertical-align: middle;
+  box-sizing: border-box;
+  color: var(--tile-text-color);
+  text-transform: uppercase;
+  user-select: none;
+  border: 2px solid var(--color-tone-3);
+}
+.tile-word {
+  font-size: 40px;
+  padding-top: 1px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  font-weight: bold;
+  vertical-align: middle;
+  box-sizing: border-box;
+  color: var(--tile-text-color);
+  text-transform: uppercase;
+  user-select: none;
+  background-color: var(--color-tone-7);
+  border: 2px solid var(--color-tone-3);
+  color: var(--color-tone-1);
+}
+.tile-word-present {
+  background-color: var(--color-present);
+  font-size: 40px;
+  padding-top: 1px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  font-weight: bold;
+  vertical-align: middle;
+  box-sizing: border-box;
+  color: var(--tile-text-color);
+  text-transform: uppercase;
+  user-select: none;
+  border: 2px solid var(--color-tone-3);
+}
+.tile-word-absent {
+  background-color: var(--color-absent);
+  font-size: 40px;
+  padding-top: 1px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  font-weight: bold;
+  vertical-align: middle;
+  box-sizing: border-box;
+  color: var(--tile-text-color);
+  text-transform: uppercase;
+  user-select: none;
+  border: 2px solid var(--color-tone-3);
+}
+.btn-1,
+.btn-2 {
+  padding: 0 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-transform: none;
+  font-family: inherit;
+  font-size: 45px;
+  line-height: 1.15;
+  margin: 0;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  text-rendering: auto;
+  color: buttontext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+.Game {
+  /* height: calc(100% - 210px); */
+  height: 100%;
+  position: relative;
+  display: block;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding: 0px 20px;
+  height: 100px;
+  color: var(--color-tone-1);
+  border-bottom: 1px solid var(--color-tone-4);
+}
+.menu {
+  width: 350px;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  color: var(--color-tone-1);
+}
+h1 {
+  font-size: 63px;
+  text-align: center;
+  flex-grow: 2;
+  margin-left: 696px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  position: relative;
+  color: #ffffff;
+}
+.GameHUD {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  height: calc(100% 65px);
+  display: flex;
+  flex-direction: column;
+}
+.Board {
+  overflow: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.Board-Module {
+  width: 300px;
+  height: 360px;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+.Board-Row {
+  margin-left: 130px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+}
+.Board-Tile {
+  animation-delay: 0ms;
+  display: inline-flex;
+}
+.Tile-Module {
+  border: 2px solid var(--color-tone-4);
+  animation-delay: 0ms;
+  font-family: "Fira Sans Condensed", sans-serif;
+  width: 60px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: bold;
+  vertical-align: middle;
+  box-sizing: border-box;
+  color: white;
+  text-transform: uppercase;
+  height: 60px;
+  user-select: none;
+  margin-right: 10px;
+  background-color: #000000;
+}
