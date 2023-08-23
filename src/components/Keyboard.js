@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useContext } from "react";
-import "./style1.css";
+import "../App.css";
 import Key from "./Key";
 import { AppContext } from "../App";
 

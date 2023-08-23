@@ -4,8 +4,6 @@ import Keyboard from "./components/Keyboard";
 import { boardDefault, generateWordSet } from "./components/Words";
 import React, { useState, createContext, useEffect } from "react";
 import GameOver from "./components/GameOver";
-import Wordle from "./components/Wordle";
-import Example from "./components/Example";
 import WordleMain from "./components/WordleMain";
 
 export const AppContext = createContext();

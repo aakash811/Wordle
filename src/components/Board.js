@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "./style1.css";
+import "../App.css";
 import { AppContext } from "../App";
 import Letter from "./Letter";
 

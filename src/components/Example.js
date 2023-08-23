@@ -1,5 +1,5 @@
 import React from "react";
-import "./style1.css";
+import "../App.css";
 
 const Example = () => {
   return (

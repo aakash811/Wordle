@@ -14,7 +14,7 @@ body {
 }
 
 nav {
-  height: 60px;
+  height: 100px;
   width: 100%;
   margin: 0;
   border-bottom: 1px solid grey;
@@ -26,7 +26,7 @@ nav h1 {
   margin: 0;
   font-family: "Fira Sans Condensed", sans-serif;
   color: white;
-  font-size: 45px;
+  font-size: 90px;
 }
 .game {
   width: 100vw;
@@ -58,7 +58,7 @@ nav h1 {
   margin: 5px;
   display: grid;
   place-items: center;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bolder;
   color: white;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -115,7 +115,7 @@ nav h1 {
   border-radius: 4px;
   display: grid;
   place-items: center;
-  font-size: 20px;
+  font-size: 23px;
   background-color: grey;
   color: white;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -128,4 +128,26 @@ nav h1 {
 #disabled {
   background-color: #3a393c;
   border: none;
+}
+
+.gameOver {
+  text-align: center;
+  margin-right: 600px;
+}
+.guess {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 30px;
+  margin-left: 600px;
+  padding-top: 30px;
+}
+.gameOver h1 {
+  margin-top: 0px;
+  margin-left: 600px;
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+.attempts {
+  text-align: center;
+  margin-left: 600px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 30px;
 }

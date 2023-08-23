@@ -1,5 +1,5 @@
 import wordBank from "./wordle-bank.txt";
-import "./style1.css";
+import "../App.css";
 
 export const boardDefault = [
   ["", "", "", "", ""],

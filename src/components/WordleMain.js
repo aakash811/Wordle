@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Wordle from "./Wordle";
 import "./style.css";
 import Example from "./Example";
 import { FaMoon } from "react-icons/fa6";
