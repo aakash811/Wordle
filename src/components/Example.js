@@ -5,7 +5,7 @@ const Example = () => {
   return (
     <section className="inst">
       <ul className="inst-list">
-        <li>Each guesss must be valid 5-letter word.</li>
+        <li className="li-1">Each guesss must be valid 5-letter word.</li>
         <li>
           The color of the tiles will change to show how close your guess was to
           the word.
