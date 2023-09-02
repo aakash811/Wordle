@@ -45,13 +45,13 @@ function App() {
     }
     console.log(wordSet);
     console.log(currWord.toLowerCase());
-    if (!wordSet.has(currWord.toLowerCase() + `\r`)) {
+    if (!wordSet.has(currWord.toLowerCase() )) {
       alert("Word not found");
     } else {
       setCurrAttempt({ attempt: currAttempt.attempt + 1, letterPos: 0 });
     }
 
-    if (currWord.toLowerCase() + `\r` === correctWord) {
+    if (currWord.toLowerCase()  === correctWord) {
       setGameOver({ gameOver: true, guessedWord: true });
       return;
     }
